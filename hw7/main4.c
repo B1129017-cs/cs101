@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main(){
 int i=12345;
 int t=0;
