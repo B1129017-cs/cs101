@@ -1,12 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-for(int i=1,j=0;i<=9;)
-printf("%d*%d=%d\t",i,j,i*++j);
-if(j==9){
-i++;
-j=0;
-printf("\n");
-}
-}
+int main() {
+    int x = 1;
+    int y = 1;
+    
+    while(x <= 9) {
+        printf("%d*%d=%d\t", x, y, x*y);
+        if(y < 9) {
+            y++;
+        } else {
+            y = 1;
+            x++;
+            printf("\n");
+        }
+    }
+    return 0;
 }
